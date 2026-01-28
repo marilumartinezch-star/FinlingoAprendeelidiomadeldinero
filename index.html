@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FINLINGO | Aprende el idioma del dinero</title>
+    <title>FINLINGO | Sitio Oficial</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script>
@@ -22,35 +22,15 @@
     </script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,800;1,800&display=swap');
-        
         body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #FFFFFF; color: #1A2B6D; scroll-behavior: smooth; }
         h1, h2, h3, h4, span, p, button, li, div { font-style: italic; font-weight: 800; }
-        
-        .brand-text-gradient {
-            background: linear-gradient(135deg, #2D5CFE, #8E44FF, #E040FB);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-
-        .mini-isotipo {
-            width: 50px; height: 50px; border-radius: 50%; padding: 3px;
-            background: linear-gradient(135deg, #2D5CFE, #E040FB);
-            display: flex; align-items: center; justify-content: center;
-        }
+        .brand-text-gradient { background: linear-gradient(135deg, #2D5CFE, #8E44FF, #E040FB); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .mini-isotipo { width: 50px; height: 50px; border-radius: 50%; padding: 3px; background: linear-gradient(135deg, #2D5CFE, #E040FB); display: flex; align-items: center; justify-content: center; }
         .mini-isotipo-inner { background: white; width: 100%; height: 100%; border-radius: 50%; display: flex; align-items: center; justify-content: center; }
-
         .glass-card { background: white; border-radius: 3rem; border: 1px solid #F1F5F9; box-shadow: 0 20px 60px rgba(26, 43, 109, 0.05); transition: all 0.3s ease; }
-        
         .course-detail { display: none; animation: fadeInDown 0.4s ease-out; }
-        @keyframes fadeInDown {
-            from { opacity: 0; transform: translateY(-10px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-
-        .img-container img {
-            width: 100%; height: 100%; object-fit: cover;
-            filter: grayscale(100%); transition: all 0.7s ease;
-        }
+        @keyframes fadeInDown { from { opacity: 0; transform: translateY(-10px); } to { opacity: 1; transform: translateY(0); } }
+        .img-container img { width: 100%; height: 100%; object-fit: cover; filter: grayscale(100%); transition: all 0.7s ease; }
         .img-container:hover img { filter: grayscale(0%); }
     </style>
 </head>
@@ -69,7 +49,6 @@
         <div class="hidden md:flex gap-8 text-[11px] uppercase tracking-widest italic font-black">
             <a href="#inicio" class="hover:text-fin-blue">Inicio</a>
             <a href="#fundadora" class="hover:text-fin-purple">Fundadora</a>
-            <a href="#nosotros" class="hover:text-fin-pink">Misión</a>
             <a href="#cursos" class="hover:text-fin-dark">Cursos</a>
         </div>
     </nav>
@@ -79,13 +58,13 @@
             FINLINGO recién está empezando
         </div>
         <h1 class="text-6xl md:text-9xl text-fin-dark uppercase tracking-tighter leading-none italic mb-8">
-            EL IDIOMA <br><span class="brand-text-gradient">DEL DINERO</span>
+            DOMINA TU <br><span class="brand-text-gradient">FUTURO</span>
         </h1>
         <p class="text-slate-500 text-xl max-w-3xl mx-auto italic leading-relaxed mb-12">
-            Educación financiera y emprendimiento para niños, adolescentes y adultos con un enfoque cercano, humano y accesible.
+            Ciudadanía digital, finanzas y emprendimiento para niños, adolescentes y adultos.
         </p>
         <a href="#cursos" class="bg-fin-dark text-white px-12 py-5 rounded-full uppercase text-sm italic tracking-widest hover:scale-105 transition-transform shadow-2xl">
-            Ver Rutas de Aprendizaje
+            Explorar Programas
         </a>
     </header>
 
@@ -103,113 +82,82 @@
                 <h2 class="text-5xl uppercase tracking-tighter italic text-fin-dark leading-tight">HISTORIA CON <br><span class="brand-text-gradient">PROPÓSITO</span></h2>
                 <div class="italic text-slate-600 space-y-6 text-lg leading-relaxed">
                     <p>"Beca 18 marcó mi vida. Hoy, después de 5 años en educación y finanzas, FINLINGO nace para retribuir a mi país, enseñando que el dinero no es motivo de miedo, sino una herramienta."</p>
-                    <p>"Enseñamos el idioma del dinero desde la claridad, la confianza y las oportunidades. Porque cuando el conocimiento financiero llega a tiempo, puede cambiar historias."</p>
+                    <p>"Enseñar el idioma del dinero desde la claridad, la confianza y las oportunidades puede cambiar historias."</p>
                 </div>
-                <div class="p-8 bg-white rounded-[3rem] border border-slate-100 shadow-sm italic">
-                    <h4 class="text-xs uppercase tracking-widest text-fin-blue mb-4">Misión Personal:</h4>
-                    <p class="text-fin-dark text-xl leading-snug">"Que el conocimiento financiero no sea un privilegio, sino una oportunidad real para cada peruano."</p>
+                <div class="p-8 bg-white rounded-[3rem] border border-slate-100 shadow-sm italic text-fin-dark text-xl">
+                    "Aprender el idioma del dinero es aprender a decidir con libertad."
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="nosotros" class="py-24 px-8">
-        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-8">
-            <div class="glass-card p-16 bg-fin-dark text-white border-none">
-                <i class="fa-solid fa-bullseye text-5xl text-fin-pink mb-8"></i>
-                <h3 class="text-4xl uppercase italic tracking-tighter mb-6">Misión</h3>
-                <p class="text-xl italic opacity-80 leading-relaxed">
-                    Enseñar a niños, adolescentes y jóvenes el idioma del dinero desde la claridad y la confianza, formando ciudadanos responsables y libres.
-                </p>
-            </div>
-            <div class="glass-card p-16 bg-white border-2 border-slate-50">
-                <i class="fa-solid fa-eye text-5xl text-fin-blue mb-8"></i>
-                <h3 class="text-4xl text-fin-dark uppercase italic tracking-tighter mb-6">Visión</h3>
-                <p class="text-xl text-slate-500 italic leading-relaxed">
-                    Ser la plataforma líder en educación financiera, cultura tributaria e inversiones, acompañando a las personas en cada etapa de su desarrollo.
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <section id="cursos" class="py-24 bg-slate-50 px-8">
+    <section id="cursos" class="py-24 px-8">
         <div class="max-w-4xl mx-auto text-center mb-16">
             <h2 class="text-5xl text-fin-dark uppercase italic tracking-tighter mb-4">Nuestros <span class="brand-text-gradient">Programas</span></h2>
-            <p class="text-slate-500 italic leading-relaxed">Diseñados específicamente para niños, adolescentes y adultos.<br>Haz clic en una categoría para ver las rutas disponibles.</p>
+            <p class="text-slate-500 italic">Programas especializados para niños, adolescentes y adultos.</p>
         </div>
 
-        <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-12">
-            <div class="space-y-6">
-                <button onclick="toggleDetails('finanzas')" class="w-full glass-card p-10 text-left hover:border-fin-blue group">
-                    <div class="flex justify-between items-center">
-                        <div>
-                            <i class="fa-solid fa-piggy-bank text-3xl text-fin-blue mb-4"></i>
-                            <h3 class="text-3xl uppercase italic text-fin-dark">Finanzas</h3>
-                            <p class="text-[10px] text-slate-400 uppercase tracking-widest mt-2">Niños • Adolescentes • Adultos</p>
-                        </div>
-                        <i class="fa-solid fa-plus text-slate-300 group-hover:rotate-45 transition-transform duration-300"></i>
-                    </div>
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+            
+            <div class="space-y-4">
+                <button onclick="toggleDetails('digital')" class="w-full glass-card p-8 text-left hover:border-fin-pink group">
+                    <i class="fa-solid fa-user-shield text-3xl text-fin-pink mb-4"></i>
+                    <h3 class="text-2xl uppercase italic text-fin-dark">Ciudadanía Digital</h3>
+                    <p class="text-[9px] text-slate-400 uppercase tracking-widest mt-2">Seguridad • Privacidad • Ética</p>
                 </button>
-                <div id="finanzas" class="course-detail space-y-4 px-4">
-                    <div class="p-8 bg-white rounded-[2.5rem] border border-fin-blue/20">
-                        <span class="text-[9px] uppercase tracking-widest text-fin-blue font-black italic">Ruta 01: Fundamentos (4 Sesiones)</span>
-                        <h4 class="text-xl italic uppercase mt-1 mb-2">Ahorro e Identidad Digital</h4>
-                        <p class="text-sm text-slate-500 italic">Conceptos esenciales de ahorro, presupuesto y seguridad en la red adaptados a tu edad.</p>
-                    </div>
-                    <div class="p-8 bg-fin-dark text-white rounded-[2.5rem]">
-                        <span class="text-[9px] uppercase tracking-widest text-fin-pink font-black italic">Ruta 02: Avanzado (8 Sesiones)</span>
-                        <h4 class="text-xl italic uppercase mt-1 mb-2">Inversiones y Contabilidad</h4>
-                        <p class="text-sm opacity-70 italic">Dominio profundo del dinero, cultura tributaria y herramientas de inversión profesional.</p>
+                <div id="digital" class="course-detail space-y-3">
+                    <div class="p-6 bg-slate-50 rounded-[2rem] border border-fin-pink/20 italic">
+                        <h4 class="text-sm uppercase text-fin-pink mb-1">Ruta de 4 Sesiones</h4>
+                        <p class="text-xs text-slate-500">Navegación segura, protección de identidad y comportamiento ético en la red.</p>
                     </div>
                 </div>
             </div>
 
-            <div class="space-y-6">
-                <button onclick="toggleDetails('emprende')" class="w-full glass-card p-10 text-left hover:border-fin-purple group">
-                    <div class="flex justify-between items-center">
-                        <div>
-                            <i class="fa-solid fa-rocket text-3xl text-fin-purple mb-4"></i>
-                            <h3 class="text-3xl uppercase italic text-fin-dark">Emprendimiento</h3>
-                            <p class="text-[10px] text-slate-400 uppercase tracking-widest mt-2">Niños • Adolescentes • Adultos</p>
-                        </div>
-                        <i class="fa-solid fa-plus text-slate-300 group-hover:rotate-45 transition-transform duration-300"></i>
-                    </div>
+            <div class="space-y-4">
+                <button onclick="toggleDetails('finanzas')" class="w-full glass-card p-8 text-left hover:border-fin-blue group">
+                    <i class="fa-solid fa-piggy-bank text-3xl text-fin-blue mb-4"></i>
+                    <h3 class="text-2xl uppercase italic text-fin-dark">Finanzas</h3>
+                    <p class="text-[9px] text-slate-400 uppercase tracking-widest mt-2">Niños • Adolescentes • Adultos</p>
                 </button>
-                <div id="emprende" class="course-detail space-y-4 px-4">
-                    <div class="p-8 bg-white rounded-[2.5rem] border border-fin-purple/20">
-                        <span class="text-[9px] uppercase tracking-widest text-fin-purple font-black italic">Ruta 01: Semilla (4 Sesiones)</span>
-                        <h4 class="text-xl italic uppercase mt-1 mb-2">De la Idea a la Acción</h4>
-                        <p class="text-sm text-slate-500 italic">Validación rápida de ideas de negocio y prototipado creativo para todas las edades.</p>
+                <div id="finanzas" class="course-detail space-y-3">
+                    <div class="p-6 bg-slate-50 rounded-[2rem] border border-fin-blue/20 italic">
+                        <h4 class="text-sm uppercase text-fin-blue mb-1">Ruta 01 (4 Sesiones)</h4>
+                        <p class="text-xs text-slate-500">Fundamentos básicos de ahorro, presupuesto y gestión del dinero.</p>
                     </div>
-                    <div class="p-8 bg-fin-dark text-white rounded-[2.5rem]">
-                        <span class="text-[9px] uppercase tracking-widest text-fin-pink font-black italic">Ruta 02: Pro (8 Sesiones)</span>
-                        <h4 class="text-xl italic uppercase mt-1 mb-2">Escalamiento y Ventas</h4>
-                        <p class="text-sm opacity-70 italic">Marketing digital, finanzas para emprendedores y presentación de proyectos (Pitch).</p>
+                    <div class="p-6 bg-fin-dark text-white rounded-[2rem] italic">
+                        <h4 class="text-sm uppercase text-fin-pink mb-1">Ruta 02 (8 Sesiones)</h4>
+                        <p class="text-xs opacity-70">Inversiones, cultura tributaria y contabilidad avanzada.</p>
                     </div>
                 </div>
             </div>
+
+            <div class="space-y-4">
+                <button onclick="toggleDetails('emprende')" class="w-full glass-card p-8 text-left hover:border-fin-purple group">
+                    <i class="fa-solid fa-rocket text-3xl text-fin-purple mb-4"></i>
+                    <h3 class="text-2xl uppercase italic text-fin-dark">Emprendimiento</h3>
+                    <p class="text-[9px] text-slate-400 uppercase tracking-widest mt-2">Niños • Adolescentes • Adultos</p>
+                </button>
+                <div id="emprende" class="course-detail space-y-3">
+                    <div class="p-6 bg-slate-50 rounded-[2rem] border border-fin-purple/20 italic">
+                        <h4 class="text-sm uppercase text-fin-purple mb-1">Ruta 01 (4 Sesiones)</h4>
+                        <p class="text-xs text-slate-500">De la idea al concepto: validación creativa y prototipos rápidos.</p>
+                    </div>
+                    <div class="p-6 bg-fin-dark text-white rounded-[2rem] italic">
+                        <h4 class="text-sm uppercase text-fin-pink mb-1">Ruta 02 (8 Sesiones)</h4>
+                        <p class="text-xs opacity-70">Marketing digital, finanzas para emprender y pitch de negocios.</p>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </section>
 
-    <section class="py-32 px-8 text-center bg-fin-dark text-white relative overflow-hidden">
-        <div class="relative z-10 max-w-3xl mx-auto">
-            <h2 class="text-5xl md:text-7xl uppercase italic tracking-tighter mb-8 leading-tight">SUMA TU <br><span class="brand-text-gradient">TALENTO</span></h2>
-            <p class="text-xl italic opacity-80 mb-12">
-                FINLINGO está abierto a organizaciones, aliados estratégicos y voluntarios. Conversemos y hagamos crecer esta iniciativa juntos.
-            </p>
-            <a href="mailto:hola@finlingo.com" class="inline-block bg-white text-fin-dark px-12 py-5 rounded-full uppercase italic text-sm tracking-widest font-black hover:bg-slate-100 transition-colors">Contactar</a>
-        </div>
-    </section>
-
-    <footer class="py-12 px-8 border-t border-slate-100 flex flex-col md:flex-row justify-between items-center gap-8">
-        <div class="flex items-center gap-4">
+    <footer class="py-12 px-8 border-t border-slate-100 text-center">
+        <div class="flex flex-col items-center gap-4">
             <div class="mini-isotipo">
                 <div class="mini-isotipo-inner"><i class="fa-solid fa-comments-dollar brand-text-gradient text-xl"></i></div>
             </div>
-            <p class="text-xs tracking-widest uppercase italic font-black text-slate-400">Aprende el idioma del dinero</p>
-        </div>
-        <div class="text-[10px] uppercase tracking-[0.4em] opacity-40 italic font-black">
-            ¡FINLINGO recién está empezando! | 2026
+            <p class="text-[10px] uppercase tracking-[0.4em] opacity-40 italic font-black">¡FINLINGO recién está empezando! | 2026</p>
         </div>
     </footer>
 
@@ -217,13 +165,9 @@
         function toggleDetails(id) {
             const el = document.getElementById(id);
             const isVisible = el.style.display === 'block';
-            
-            // Cerrar otros antes de abrir el seleccionado
             document.querySelectorAll('.course-detail').forEach(d => d.style.display = 'none');
-            
             el.style.display = isVisible ? 'none' : 'block';
         }
     </script>
-
 </body>
 </html>

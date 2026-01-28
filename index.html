@@ -23,141 +23,176 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,800;1,800&display=swap');
         
-        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #FDFDFF; color: #1A2B6D; scroll-behavior: smooth; }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #FFFFFF; color: #1A2B6D; scroll-behavior: smooth; }
         h1, h2, h3, h4, span, p, button, li, div { font-style: italic; font-weight: 800; }
         
         .brand-text-gradient {
-            background: linear-gradient(135deg, #2D5CFE, #E040FB);
+            background: linear-gradient(135deg, #2D5CFE, #8E44FF, #E040FB);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
 
         .mini-isotipo {
-            width: 45px; height: 45px; border-radius: 50%; padding: 2px;
+            width: 50px; height: 50px; border-radius: 50%; padding: 3px;
             background: linear-gradient(135deg, #2D5CFE, #E040FB);
             display: flex; align-items: center; justify-content: center;
         }
         .mini-isotipo-inner { background: white; width: 100%; height: 100%; border-radius: 50%; display: flex; align-items: center; justify-content: center; }
 
-        .section-padding { padding: 6rem 2rem; }
-        .glass-card { background: white; border-radius: 2.5rem; border: 1px solid #F1F5F9; box-shadow: 0 10px 40px rgba(26, 43, 109, 0.05); }
+        .glass-card { background: white; border-radius: 3rem; border: 1px solid #F1F5F9; box-shadow: 0 20px 60px rgba(26, 43, 109, 0.05); }
+        
+        section { padding: 100px 20px; }
     </style>
 </head>
 <body>
 
-    <nav class="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-md border-b border-slate-100 px-8 py-4 flex justify-between items-center">
+    <nav class="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-md border-b border-slate-100 px-8 py-4 flex justify-between items-center">
         <div class="flex items-center gap-4">
             <div class="mini-isotipo">
                 <div class="mini-isotipo-inner"><i class="fa-solid fa-comments-dollar brand-text-gradient text-xl"></i></div>
             </div>
             <div>
-                <h2 class="text-fin-dark text-lg tracking-tighter uppercase leading-none">Finlingo</h2>
-                <p class="brand-text-gradient text-[7px] tracking-[0.2em] uppercase italic leading-none">Aprende el idioma del dinero</p>
+                <h2 class="text-fin-dark text-xl tracking-tighter uppercase leading-none">Finlingo</h2>
+                <p class="brand-text-gradient text-[8px] tracking-[0.3em] uppercase italic leading-none">Aprende el idioma del dinero</p>
             </div>
         </div>
-        <div class="hidden md:flex gap-8 text-[10px] uppercase tracking-widest">
+        <div class="hidden md:flex gap-8 text-[11px] uppercase tracking-widest">
             <a href="#inicio" class="hover:text-fin-blue transition-colors">Inicio</a>
-            <a href="#nosotros" class="hover:text-fin-blue transition-colors">Quiénes Somos</a>
-            <a href="#mision" class="hover:text-fin-blue transition-colors">Misión y Visión</a>
-            <a href="#cursos" class="hover:text-fin-blue transition-colors">Cursos</a>
+            <a href="#fundadora" class="hover:text-fin-purple transition-colors">Fundadora</a>
+            <a href="#nosotros" class="hover:text-fin-pink transition-colors">Misión y Visión</a>
+            <a href="#cursos" class="hover:text-fin-dark transition-colors">Cursos</a>
         </div>
     </nav>
 
-    <header id="inicio" class="min-h-screen flex flex-col justify-center items-center text-center px-6 pt-20">
-        <span class="brand-text-gradient text-sm uppercase tracking-[0.5em] mb-6">Iniciativa Educativa</span>
-        <h1 class="text-6xl md:text-8xl text-fin-dark uppercase tracking-tighter leading-none italic mb-8">
-            TU FUTURO <br><span class="brand-text-gradient">COMIENZA AQUÍ</span>
-        </h1>
-        <p class="text-slate-400 text-lg max-w-2xl mx-auto italic font-bold leading-relaxed mb-10">
-            Estamos transformando la educación para adolescentes. Aprende a navegar, protegerte y dominar el mundo digital con los expertos.
-        </p>
-        <div class="bg-fin-dark text-white px-8 py-4 rounded-full italic uppercase text-xs tracking-widest">
-            ¡FINLINGO recién está empezando!
+    <header id="inicio" class="min-h-screen flex flex-col justify-center items-center text-center px-6">
+        <div class="inline-block bg-fin-dark text-white px-6 py-2 rounded-full text-[10px] uppercase tracking-[0.4em] mb-8 italic">
+            FINLINGO recién está empezando
         </div>
+        <h1 class="text-6xl md:text-9xl text-fin-dark uppercase tracking-tighter leading-none italic mb-8">
+            EL IDIOMA <br><span class="brand-text-gradient">DEL DINERO</span>
+        </h1>
+        <p class="text-slate-500 text-xl max-w-3xl mx-auto italic leading-relaxed mb-12">
+            Transformamos el miedo en herramientas. Enseñamos educación financiera y emprendimiento con un enfoque cercano, humano y accesible.
+        </p>
+        <a href="#cursos" class="bg-fin-dark text-white px-12 py-5 rounded-full uppercase text-sm italic tracking-widest hover:scale-105 transition-transform shadow-2xl">
+            Ver Cursos Disponibles
+        </a>
     </header>
 
-    <section id="nosotros" class="section-padding bg-slate-50">
+    <section id="fundadora" class="bg-slate-50">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+            <div class="relative">
+                <div class="aspect-[4/5] bg-fin-dark rounded-[4rem] overflow-hidden flex items-center justify-center relative shadow-2xl">
+                    <i class="fa-solid fa-user-tie text-[15rem] text-white/5 absolute"></i>
+                    <div class="absolute bottom-10 left-10 text-white">
+                        <h3 class="text-4xl uppercase tracking-tighter italic">Marilú Martínez</h3>
+                        <p class="text-fin-pink uppercase text-xs tracking-widest mt-2">Fundadora & Ing. Empresarial</p>
+                    </div>
+                </div>
+            </div>
+            <div class="space-y-8">
+                <h2 class="text-5xl uppercase tracking-tighter italic text-fin-dark leading-tight">HISTORIA CON <br><span class="brand-text-gradient">PROPÓSITO</span></h2>
+                <div class="italic text-slate-600 space-y-6 text-lg">
+                    <p>"Gracias a una oportunidad que marcó mi vida —Beca 18— pude formarme y convertirme en ingeniera. Esa oportunidad me dejó una pregunta: ¿cómo retribuirle a mi país todo lo que me dio?"</p>
+                    <p>"Hoy, tras más de 5 años en educación y finanzas, nació FINLINGO. No es solo un proyecto profesional, es mi forma de decirle al Perú: gracias, aquí estoy para devolver lo aprendido."</p>
+                </div>
+                <div class="flex gap-4">
+                    <div class="bg-white p-6 rounded-3xl shadow-sm border border-slate-100 flex-1">
+                        <h4 class="text-fin-blue text-xs uppercase mb-2 italic">Experiencia</h4>
+                        <p class="text-xl italic text-fin-dark">+5 Años</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-3xl shadow-sm border border-slate-100 flex-1">
+                        <h4 class="text-fin-purple text-xs uppercase mb-2 italic">Compromiso</h4>
+                        <p class="text-xl italic text-fin-dark">Impacto Social</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="nosotros">
         <div class="max-w-6xl mx-auto">
-            <div class="grid md:grid-cols-2 gap-16 items-center">
-                <div class="glass-card p-12">
-                    <h2 class="text-4xl text-fin-dark uppercase italic tracking-tighter mb-6">¿Qué es <span class="brand-text-gradient">Finlingo?</span></h2>
-                    <p class="text-slate-600 italic leading-relaxed mb-6">
-                        Somos una iniciativa pionera dedicada a brindar fundamentos básicos de ciudadanía digital y educación financiera a jóvenes. Nuestro objetivo es darte las herramientas para que navegues con seguridad y confianza.
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="glass-card p-16 bg-fin-dark text-white">
+                    <i class="fa-solid fa-bullseye text-5xl text-fin-pink mb-8"></i>
+                    <h3 class="text-4xl uppercase italic tracking-tighter mb-6">Nuestra Misión</h3>
+                    <p class="text-xl italic opacity-80 leading-relaxed">
+                        Enseñar a niños, adolescentes y jóvenes el idioma del dinero desde la claridad, confianza y oportunidad. Queremos que el conocimiento financiero deje de ser un privilegio para ser una oportunidad real.
                     </p>
-                    <div class="p-6 bg-fin-blue/5 rounded-2xl border-l-4 border-fin-blue">
-                        <h4 class="text-fin-blue uppercase text-xs mb-2">Sobre nuestra Fundadora</h4>
-                        <p class="text-sm italic text-slate-700">
-                            Liderado por una experta comprometida con la seguridad digital, FINLINGO nace para cerrar la brecha de conocimiento en el uso responsable del dinero y la identidad en la red.
-                        </p>
-                    </div>
                 </div>
-                <div class="relative">
-                    <div class="w-full h-[500px] bg-fin-dark rounded-[4rem] flex items-center justify-center overflow-hidden">
-                        <i class="fa-solid fa-user-tie text-9xl text-white/10 absolute"></i>
-                        <p class="text-white text-center px-12 italic text-2xl">"Transformando el futuro hoy a través del conocimiento digital"</p>
-                    </div>
+                <div class="glass-card p-16 border-2 border-slate-50">
+                    <i class="fa-solid fa-earth-americas text-5xl text-fin-blue mb-8"></i>
+                    <h3 class="text-4xl text-fin-dark uppercase italic tracking-tighter mb-6">Nuestra Visión</h3>
+                    <p class="text-xl text-slate-500 italic leading-relaxed">
+                        Invertir en mejores decisiones y mayor libertad. Buscamos formar ciudadanos responsables y exitosos, expandiendo nuestra formación hacia la cultura tributaria, inversiones y contabilidad.
+                    </p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="mision" class="section-padding">
-        <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-8">
-            <div class="glass-card p-12 bg-fin-dark text-white border-none">
-                <i class="fa-solid fa-rocket text-fin-pink text-4xl mb-6"></i>
-                <h3 class="text-3xl uppercase italic mb-4">Nuestra Misión</h3>
-                <p class="opacity-80 italic leading-relaxed">
-                    Equipar a los adolescentes con las habilidades críticas para compartir con cuidado, proteger su privacidad y evitar fraudes en un mundo cada vez más digitalizado.
-                </p>
-            </div>
-            <div class="glass-card p-12">
-                <i class="fa-solid fa-eye text-fin-blue text-4xl mb-6"></i>
-                <h3 class="text-3xl text-fin-dark uppercase italic mb-4">Nuestra Visión</h3>
-                <p class="text-slate-500 italic leading-relaxed">
-                    Ser la plataforma líder de referencia para que las nuevas generaciones aprendan "el idioma del dinero" y se conviertan en ciudadanos digitales amables y protegidos.
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <section id="cursos" class="section-padding bg-slate-50">
+    <section id="cursos" class="bg-slate-50">
         <div class="max-w-6xl mx-auto text-center mb-16">
-            <h2 class="text-5xl text-fin-dark uppercase italic tracking-tighter mb-4">Nuestra <span class="brand-text-gradient">Ruta de Aprendizaje</span></h2>
-            <p class="text-slate-500 italic">Un curso fundamental de 4 sesiones diseñado para el éxito digital.</p>
+            <h2 class="text-5xl text-fin-dark uppercase italic tracking-tighter mb-4">Nuestros <span class="brand-text-gradient">Cursos</span></h2>
+            <p class="text-slate-500 italic max-w-2xl mx-auto">Acompañamos a las personas en cada etapa de su desarrollo financiero con una metodología humana y accesible.</p>
         </div>
-        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-6">
-            <div class="glass-card p-8 hover:scale-105 transition-transform">
-                <div class="w-12 h-12 rounded-full bg-fin-blue/10 flex items-center justify-center text-fin-blue mb-6 italic">01</div>
-                <h4 class="text-fin-dark uppercase text-sm mb-4">Ciudadanía Digital</h4>
-                <p class="text-xs text-slate-500 italic">Aprende a decidir qué compartir y con quién en la red.</p>
+        <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            <div class="glass-card p-10 flex flex-col justify-between hover:border-fin-blue transition-all">
+                <div>
+                    <i class="fa-solid fa-shield-heart text-3xl text-fin-blue mb-6"></i>
+                    <h4 class="text-2xl uppercase italic text-fin-dark mb-4 leading-tight">Ciudadanía Digital</h4>
+                    <p class="text-sm text-slate-500 italic mb-8">Fundamentos básicos para adolescentes. Aprende a compartir con cuidado y proteger tus secretos online.</p>
+                </div>
+                <span class="text-[10px] bg-fin-blue/10 text-fin-blue px-4 py-2 rounded-full inline-block uppercase italic">Disponible Ahora</span>
             </div>
-            <div class="glass-card p-8 hover:scale-105 transition-transform">
-                <div class="w-12 h-12 rounded-full bg-fin-purple/10 flex items-center justify-center text-fin-purple mb-6 italic">02</div>
-                <h4 class="text-fin-dark uppercase text-sm mb-4">Seguridad Online</h4>
-                <p class="text-xs text-slate-500 italic">Diferencia lo real de lo falso y evita trampas en línea.</p>
+            <div class="glass-card p-10 flex flex-col justify-between hover:border-fin-purple transition-all">
+                <div>
+                    <i class="fa-solid fa-lightbulb text-3xl text-fin-purple mb-6"></i>
+                    <h4 class="text-2xl uppercase italic text-fin-dark mb-4 leading-tight">Finanzas y Emprendimiento</h4>
+                    <p class="text-sm text-slate-500 italic mb-8">Aprende a gestionar tus recursos y convertir tus ideas en proyectos reales con confianza.</p>
+                </div>
+                <span class="text-[10px] bg-fin-purple/10 text-fin-purple px-4 py-2 rounded-full inline-block uppercase italic">Disponible Ahora</span>
             </div>
-            <div class="glass-card p-8 hover:scale-105 transition-transform">
-                <div class="w-12 h-12 rounded-full bg-fin-pink/10 flex items-center justify-center text-fin-pink mb-6 italic">03</div>
-                <h4 class="text-fin-dark uppercase text-sm mb-4">Privacidad Total</h4>
-                <p class="text-xs text-slate-500 italic">La importancia de las contraseñas seguras y la protección de datos.</p>
-            </div>
-            <div class="glass-card p-8 hover:scale-105 transition-transform">
-                <div class="w-12 h-12 rounded-full bg-fin-dark/10 flex items-center justify-center text-fin-dark mb-6 italic">04</div>
-                <h4 class="text-fin-dark uppercase text-sm mb-4">Comunidad Amable</h4>
-                <p class="text-xs text-slate-500 italic">El poder de las buenas palabras y la prevención del acoso.</p>
+            <div class="glass-card p-10 border-dashed border-2 flex flex-col justify-between opacity-70">
+                <div>
+                    <i class="fa-solid fa-file-invoice-dollar text-3xl text-slate-400 mb-6"></i>
+                    <h4 class="text-2xl uppercase italic text-slate-400 mb-4 leading-tight">Cultura <br>Tributaria</h4>
+                    <p class="text-sm text-slate-400 italic mb-8">Clave para formar ciudadanos responsables. Aprende el valor de los impuestos y la formalidad.</p>
+                </div>
+                <span class="text-[10px] bg-slate-100 text-slate-400 px-4 py-2 rounded-full inline-block uppercase italic">Próximamente</span>
             </div>
         </div>
     </section>
 
-    <footer class="bg-fin-dark text-white py-12 px-8">
-        <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+    <section class="bg-fin-dark text-white text-center py-32 relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10">
+            <i class="fa-solid fa-comments-dollar text-[40rem] absolute -top-40 -left-20"></i>
+        </div>
+        <div class="relative z-10 max-w-4xl mx-auto px-6">
+            <h2 class="text-5xl md:text-7xl uppercase italic tracking-tighter mb-8 leading-tight">¿QUIERES SUMAR <br><span class="brand-text-gradient">ESFUERZOS?</span></h2>
+            <p class="text-xl italic opacity-80 mb-12">
+                FINLINGO está abierto a organizaciones, instituciones, voluntarios y aliados estratégicos que compartan este propósito. Invertir en educación es invertir en un país con más oportunidades.
+            </p>
+            <a href="mailto:hola@finlingo.com" class="bg-white text-fin-dark px-16 py-6 rounded-full uppercase italic text-sm tracking-[0.2em] shadow-2xl hover:bg-slate-100 transition-all">Conversemos</a>
+        </div>
+    </section>
+
+    <footer class="py-12 px-8 border-t border-slate-100">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
             <div class="flex items-center gap-4">
                 <div class="mini-isotipo">
                     <div class="mini-isotipo-inner"><i class="fa-solid fa-comments-dollar brand-text-gradient text-xl"></i></div>
                 </div>
-                <p class="text-xs tracking-widest uppercase italic">Aprende el idioma del dinero</p>
+                <div>
+                    <h2 class="text-fin-dark text-lg tracking-tighter uppercase leading-none italic">Finlingo</h2>
+                    <p class="brand-text-gradient text-[7px] tracking-[0.3em] uppercase italic leading-none">Aprende el idioma del dinero</p>
+                </div>
             </div>
-            <p class="text-[10px] uppercase tracking-widest opacity-50 italic">© 2026 FINLINGO - Iniciativa en Crecimiento</p>
+            <p class="text-[9px] uppercase tracking-[0.5em] opacity-40 italic">© 2026 FINLINGO – Transformando el futuro hoy</p>
+            <div class="flex gap-6 text-fin-dark opacity-60">
+                <i class="fa-brands fa-linkedin-in text-xl cursor-pointer hover:text-fin-blue"></i>
+                <i class="fa-brands fa-instagram text-xl cursor-pointer hover:text-fin-pink"></i>
+            </div>
         </div>
     </footer>
 

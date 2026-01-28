@@ -47,9 +47,9 @@
             </div>
         </div>
         <div class="hidden md:flex gap-8 text-[11px] uppercase tracking-widest italic font-black">
-            <a href="#inicio" class="hover:text-fin-blue">Inicio</a>
-            <a href="#fundadora" class="hover:text-fin-purple">Fundadora</a>
-            <a href="#cursos" class="hover:text-fin-dark">Cursos</a>
+            <a href="#inicio" class="hover:text-fin-blue transition-colors">Inicio</a>
+            <a href="#fundadora" class="hover:text-fin-purple transition-colors">Fundadora</a>
+            <a href="#cursos" class="hover:text-fin-dark transition-colors">Cursos</a>
         </div>
     </nav>
 
@@ -80,14 +80,13 @@
             </div>
             <div class="space-y-8">
                 <h2 class="text-5xl uppercase tracking-tighter italic text-fin-dark leading-tight">HISTORIA CON <br><span class="brand-text-gradient">PROPÓSITO</span></h2>
-                <div class="italic text-slate-600 space-y-6 text-lg leading-relaxed">
-                    <p>Hola, soy Marilú Martínez y hoy quiero compartir una historia que nace desde la gratitud, pero sobre todo desde un propósito.</p>
-                    <p>Hace algunos años, era una joven con grandes sueños y recursos limitados. Gracias a una oportunidad que marcó mi vida —<b>Beca 18</b>— pude estudiar, formarme y convertirme en ingeniera empresarial.</p>
-                    <p>¿Cómo retribuirle a mi país todo lo que me dio? Hoy, después de 5 años de experiencia, encontré ese camino: <b>FINLINGO</b>.</p>
-                    <p>Enseñamos el idioma del dinero desde la claridad y la confianza. Porque cuando el conocimiento llega a tiempo, cambia historias.</p>
+                <div class="italic text-slate-600 space-y-6 text-lg leading-relaxed text-justify">
+                    <p>Hola, soy Marilú Martínez y hoy quiero compartir una historia que nace desde la gratitud, pero sobre todo desde un propósito. Hace algunos años, era una joven con grandes sueños y recursos limitados.</p>
+                    <p>Gracias a una oportunidad que marcó mi vida —<b>Beca 18</b>— pude estudiar, formarme y convertirme en ingeniera empresarial. Esa oportunidad me dejó una pregunta: <b>¿cómo retribuirle a mi país todo lo que me dio?</b></p>
+                    <p>Hoy, con FINLINGO, enseñamos el idioma del dinero desde la claridad y la confianza. Porque cuando el conocimiento llega a tiempo, puede cambiar historias.</p>
                 </div>
-                <div class="p-8 bg-white rounded-[3rem] border border-slate-100 shadow-sm italic text-fin-dark text-xl">
-                    "Que el conocimiento financiero no sea un privilegio, sino una oportunidad real."
+                <div class="p-8 bg-white rounded-[3rem] border border-slate-100 shadow-sm italic text-fin-dark text-xl leading-snug">
+                    "Aprender el idioma del dinero es aprender a decidir con libertad."
                 </div>
             </div>
         </div>
@@ -96,7 +95,7 @@
     <section id="cursos" class="py-24 px-8">
         <div class="max-w-4xl mx-auto text-center mb-16">
             <h2 class="text-5xl text-fin-dark uppercase italic tracking-tighter mb-4">Nuestros <span class="brand-text-gradient">Programas</span></h2>
-            <p class="text-slate-500 italic">Adaptados para niños, adolescentes y adultos.</p>
+            <p class="text-slate-500 italic">Especializados para niños, adolescentes y adultos.</p>
         </div>
 
         <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -105,12 +104,12 @@
                 <button onclick="toggleDetails('digital')" class="w-full glass-card p-8 text-left hover:border-fin-pink group">
                     <i class="fa-solid fa-user-shield text-3xl text-fin-pink mb-4"></i>
                     <h3 class="text-2xl uppercase italic text-fin-dark">Ciudadanía Digital</h3>
-                    <p class="text-[9px] text-slate-400 uppercase tracking-widest mt-2">Seguridad • Privacidad • Ética</p>
+                    <p class="text-[9px] text-slate-400 uppercase tracking-widest mt-2">Seguridad • Privacidad</p>
                 </button>
                 <div id="digital" class="course-detail space-y-3">
                     <div class="p-6 bg-slate-50 rounded-[2rem] border border-fin-pink/20 italic">
                         <h4 class="text-sm uppercase text-fin-pink mb-1">Ruta 01 (4 Sesiones)</h4>
-                        <p class="text-xs text-slate-500">Fundamentos de seguridad y navegación responsable en la red.</p>
+                        <p class="text-xs text-slate-500">Fundamentos de seguridad y navegación responsable.</p>
                     </div>
                 </div>
             </div>
@@ -124,11 +123,11 @@
                 <div id="finanzas" class="course-detail space-y-3">
                     <div class="p-6 bg-slate-50 rounded-[2rem] border border-fin-blue/20 italic">
                         <h4 class="text-sm uppercase text-fin-blue mb-1">Ruta 01 (4 Sesiones)</h4>
-                        <p class="text-xs text-slate-500">Fundamentos básicos, ahorro y presupuesto personal.</p>
+                        <p class="text-xs text-slate-500">Ahorro inteligente y presupuesto personal.</p>
                     </div>
                     <div class="p-6 bg-fin-dark text-white rounded-[2rem] italic">
                         <h4 class="text-sm uppercase text-fin-pink mb-1">Ruta 02 (8 Sesiones)</h4>
-                        <p class="text-xs opacity-70">Cultura tributaria, inversiones y contabilidad avanzada.</p>
+                        <p class="text-xs opacity-70">Inversiones, tributación y contabilidad.</p>
                     </div>
                 </div>
             </div>
@@ -142,36 +141,44 @@
                 <div id="emprende" class="course-detail space-y-3">
                     <div class="p-6 bg-slate-50 rounded-[2rem] border border-fin-purple/20 italic">
                         <h4 class="text-sm uppercase text-fin-purple mb-1">Ruta 01 (4 Sesiones)</h4>
-                        <p class="text-xs text-slate-500">Validación creativa de ideas de negocio iniciales.</p>
+                        <p class="text-xs text-slate-500">De la idea al concepto y validación rápida.</p>
                     </div>
                     <div class="p-6 bg-fin-dark text-white rounded-[2rem] italic">
                         <h4 class="text-sm uppercase text-fin-pink mb-1">Ruta 02 (8 Sesiones)</h4>
-                        <p class="text-xs opacity-70">Marketing digital, finanzas para emprender y pitch.</p>
+                        <p class="text-xs opacity-70">Marketing digital, finanzas pro y pitch.</p>
                     </div>
                 </div>
             </div>
-
         </div>
     </section>
 
     <section class="py-32 px-8 text-center bg-fin-dark text-white relative overflow-hidden">
         <div class="relative z-10 max-w-4xl mx-auto">
-            <h2 class="text-5xl md:text-7xl uppercase italic tracking-tighter mb-8 leading-tight">HAGAMOS <br><span class="brand-text-gradient">HISTORIA JUNTOS</span></h2>
+            <h2 class="text-5xl md:text-7xl uppercase italic tracking-tighter mb-8 leading-tight">SUMA TU <br><span class="brand-text-gradient">VOCACIÓN</span></h2>
             <p class="text-xl italic opacity-80 mb-12 leading-relaxed">
-                FINLINGO está abierto al feedback, a la colaboración y a voluntarios que quieran aportar desde su experiencia y vocación. Si este propósito conecta contigo, conversemos.
+                FINLINGO está abierto al feedback, a la colaboración y a voluntarios que quieran aportar desde su experiencia. Invertir en educación financiera es invertir en un país con más oportunidades.
             </p>
-            <a href="mailto:hola@finlingo.com" class="inline-block bg-white text-fin-dark px-12 py-5 rounded-full uppercase italic text-sm tracking-widest font-black hover:scale-105 transition-transform">
-                Sumar Esfuerzos
+            <a href="mailto:hola@finlingo.com" class="inline-block bg-white text-fin-dark px-12 py-5 rounded-full uppercase italic text-sm tracking-widest font-black hover:scale-105 transition-transform shadow-2xl">
+                Conversemos
             </a>
         </div>
     </section>
 
-    <footer class="py-12 px-8 border-t border-slate-100 text-center">
-        <div class="flex flex-col items-center gap-4">
+    <footer class="py-16 px-8 border-t border-slate-100 text-center bg-white">
+        <div class="flex flex-col items-center gap-6">
             <div class="mini-isotipo">
                 <div class="mini-isotipo-inner"><i class="fa-solid fa-comments-dollar brand-text-gradient text-xl"></i></div>
             </div>
-            <p class="text-[10px] uppercase tracking-[0.4em] opacity-40 italic font-black">¡FINLINGO recién está empezando! | 2026</p>
+            
+            <a href="https://www.facebook.com/finlingoaprendeelidiomadeldinero" target="_blank" class="flex items-center gap-2 text-fin-blue hover:text-fin-dark transition-colors italic font-black uppercase text-xs tracking-widest">
+                <i class="fa-brands fa-facebook text-2xl"></i>
+                Seguir en Facebook
+            </a>
+
+            <div class="space-y-2">
+                <p class="text-fin-dark text-sm italic uppercase tracking-widest">FINLINGO – Aprende el idioma del dinero</p>
+                <p class="text-[10px] uppercase tracking-[0.5em] opacity-40 italic font-black">¡FINLINGO recién está empezando! | 2026</p>
+            </div>
         </div>
     </footer>
 
